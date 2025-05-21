@@ -25,23 +25,3 @@
   }
 }
 
-{
-  "name": "exerc-cio1-lumestack-guiautomation",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Davvi-Duarte/Exerc-cio1-Lumestack-GUIAutomation.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Davvi-Duarte/Exerc-cio1-Lumestack-GUIAutomation/issues"
-  },
-  "homepage": "https://github.com/Davvi-Duarte/Exerc-cio1-Lumestack-GUIAutomation#readme",
-  "description": ""
-}
