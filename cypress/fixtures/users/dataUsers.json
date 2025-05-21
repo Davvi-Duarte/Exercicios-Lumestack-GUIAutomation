@@ -1,6 +1,9 @@
 {
   "userSucess":{
-  "usernameValid": "DvvD",
+  "firstNameValid" : "Davvi",
+  "lastNameValid" : "Duarte",
+  "usernameValid" : "DvvD",
   "passwordValid": "QATest123"
-  }
+  },
+  "passwordDefault" : "QATest123"
 }
