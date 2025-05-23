@@ -24,16 +24,23 @@ describe("login - RWA", () => {
     loginObj.checkInvalidLoginMessage();
   });
 
-  it("login - valid", () => {
-    loginObj.loginWithAnyUser(dataUsers.userSucess.usernameValid, dataUsers.userSucess.passwordValid);
-  });
-
-  it("singUp a valid user", () => {
+  it("singUp a any valid user", () => {
     loginObj.openSingUpPage();
     signupObj.checkSignupPageTitle();
     signupObj.singUpWithAnyUser(chance.first(), chance.last(), chance.prefix()+" Test",dataUsers.passwordDefault, dataUsers.passwordDefault);  
     cy.url().should('equals', Cypress.config().baseUrl + '/signin');
-  })
+  });
+
+  it("singUp - valid user default", () => {
+    loginObj.openSingUpPage();
+    signupObj.checkSignupPageTitle();
+    signupObj.singUpWithAnyUser(dataUsers.userSucess.firstNameValid,dataUsers.userSucess.lastNameValid, dataUsers.userSucess.usernameValid, dataUsers.userSucess.passwordValid, dataUsers.userSucess.passwordValid);
+    cy.url().should('equals', Cypress.config().baseUrl + '/signin');
+  });
+
+  it("login - valid", () => {
+    loginObj.loginWithAnyUser(dataUsers.userSucess.usernameValid, dataUsers.userSucess.passwordValid);
+  });
 
   it("singUp - Invalid/incomplete fields (Text Helper Test)", () => {
     loginObj.openSingUpPage();
