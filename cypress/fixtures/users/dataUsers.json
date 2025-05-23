@@ -3,7 +3,10 @@
   "firstNameValid" : "Davvi",
   "lastNameValid" : "Duarte",
   "usernameValid" : "DvvD",
-  "passwordValid": "QATest123"
+  "passwordValid": "QATest123",
+  "bankNameUserValid" : "Banco do Brasil",
+  "routingNumberBankUserValid" : "123456789",
+  "accountNumberUserValid" : "987654321"
   },
   "passwordDefault" : "QATest123"
 }
