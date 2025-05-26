@@ -8,6 +8,7 @@ class HomePage {
             bankAccountSubmitButton:"[data-test='bankaccount-submit']",
             doneSubmitButton:"[data-test='user-onboarding-next']",
             createNewTransationButton: "[data-test='nav-top-new-transaction']",
+            balanceField: "[data-test='sidenav-user-balance']",
         };
         return selectors;
     };
