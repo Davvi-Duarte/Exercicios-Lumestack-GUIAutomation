@@ -9,6 +9,7 @@ class HomePage {
             doneSubmitButton:"[data-test='user-onboarding-next']",
             createNewTransationButton: "[data-test='nav-top-new-transaction']",
             balanceField: "[data-test='sidenav-user-balance']",
+            mineTransactionsButton: "[data-test='nav-personal-tab']",
         };
         return selectors;
     };
@@ -26,6 +27,10 @@ class HomePage {
 
     clickCreateNewTransationButton(){
         cy.get(this.selectorsList().createNewTransationButton).click();
+    }
+
+    clickMineTransactionsButton(){
+        cy.get(this.selectorsList().mineTransactionsButton).click();
     }
    
 };
